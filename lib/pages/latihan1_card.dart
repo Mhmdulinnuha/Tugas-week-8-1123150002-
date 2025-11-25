@@ -250,7 +250,6 @@ class MyPages extends StatelessWidget {
 
       SizedBox(height: 30),
 
-      // ================== CARD NUMBER ==================
       const Text(
         "4562   1122   4595   7852",
         style: TextStyle(
@@ -259,6 +258,47 @@ class MyPages extends StatelessWidget {
           color: Colors.white,
           fontWeight: FontWeight.w600,
         ),
+      ),
+
+      SizedBox(height: 30),
+
+    
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          // NAME
+          const Text(
+            "IKetut Gunawan",
+            style: TextStyle(
+              fontSize: 18,
+              color: Colors.white,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+
+          // MASTERCARD OVERLAP LOGO
+          Stack(
+            children: [
+              Container(
+                width: 36,
+                height: 36,
+                decoration: const BoxDecoration(
+                  color: Color(0xFFEB001B),
+                  shape: BoxShape.circle,
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 16),
+                width: 36,
+                height: 36,
+                decoration: const BoxDecoration(
+                  color: Color(0xFFF79E1B),
+                  shape: BoxShape.circle,
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     ],
   ),
