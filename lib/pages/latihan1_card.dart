@@ -266,7 +266,6 @@ class MyPages extends StatelessWidget {
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // NAME
           const Text(
             "IKetut Gunawan",
             style: TextStyle(
@@ -276,7 +275,7 @@ class MyPages extends StatelessWidget {
             ),
           ),
 
-          // MASTERCARD OVERLAP LOGO
+         
           Stack(
             children: [
               Container(
@@ -297,6 +296,51 @@ class MyPages extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+        ],
+      ),
+
+      SizedBox(height: 20),
+
+    
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: const [
+              Text(
+                "Expiry Date",
+                style: TextStyle(color: Colors.white70, fontSize: 12),
+              ),
+              SizedBox(height: 3),
+              Text(
+                "24/2000",
+                style: TextStyle(color: Colors.white, fontSize: 16),
+              ),
+            ],
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: const [
+              Text(
+                "CVV",
+                style: TextStyle(color: Colors.white70, fontSize: 12),
+              ),
+              SizedBox(height: 3),
+              Text(
+                "6986",
+                style: TextStyle(color: Colors.white, fontSize: 16),
+              ),
+            ],
+          ),
+          const Text(
+            "Mastercard",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ],
       ),
