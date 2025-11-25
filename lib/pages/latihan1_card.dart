@@ -36,6 +36,29 @@ class MyPages extends StatelessWidget {
                 child: Text("margin card",style: TextStyle(fontSize: 10.0)),
                 ),
             ),
+
+            const SizedBox(height: 20),
+
+            const Card(
+              elevation: 8,
+              child: Padding(padding: const EdgeInsets.all(20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Tentang saya',
+                    style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    'Saya Muhamamad Ulin nuha kelas teknik informatika software engginer',
+                    style: TextStyle(fontSize: 15,color: Colors.grey, height: 1.5),
+                    textAlign: TextAlign.justify,
+                  ),
+                ],
+              ),
+              ),
+            ),
           ]),
         ),
       ),
