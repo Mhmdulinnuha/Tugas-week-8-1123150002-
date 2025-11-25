@@ -196,6 +196,31 @@ class MyPages extends StatelessWidget {
                     ),
                   ),
                 ),
+
+
+           
+          const SizedBox(height: 20),
+
+          Card(
+            elevation: 5.0,
+            margin: EdgeInsets.all(16.0),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                ListTile(
+                  leading: Icon(Icons.install_desktop_rounded, size: 50),
+                  title: Text('belum ada judul'),
+                  subtitle: Text('sebuah judul lagu dari nuha'),
+                ),
+                Padding(padding: EdgeInsets.all(16.0),
+                child: Text(
+                  'card dapat diisi berbagai widget seperti text,'
+                  'image,button, dan lainya.',
+                ),
+                ),
+              ],
+            ),
+          ),
           ]),
         ),
       ),
