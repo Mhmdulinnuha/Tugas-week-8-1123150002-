@@ -96,6 +96,17 @@ class MyPages extends StatelessWidget {
                             backgroundImage: AssetImage("assets/images/image.png"),
                           ),
                         ),
+
+                        const SizedBox(height: 12),
+
+                        const Text(
+                          "Nuha Ulin",
+                          style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
                       ],
                     ),
                   ),
