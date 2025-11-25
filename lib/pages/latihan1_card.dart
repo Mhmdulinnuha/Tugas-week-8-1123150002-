@@ -26,6 +26,16 @@ class MyPages extends StatelessWidget {
               color: Colors.yellow,
               child: Text("Tinggi bayangan shadow",style: TextStyle(fontSize: 12.0)),
           ),
+
+          const SizedBox(height: 20),
+
+            const Card(
+              margin: EdgeInsets.all(16.0),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("margin card",style: TextStyle(fontSize: 10.0)),
+                ),
+            ),
           ]),
         ),
       ),
