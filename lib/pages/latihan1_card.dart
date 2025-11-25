@@ -18,6 +18,14 @@ class MyPages extends StatelessWidget {
               color: Colors.red,
               child: Text("Card with color", style: TextStyle(fontSize: 16.0)),
             ),
+
+            const SizedBox(height: 20),
+
+            const Card(
+              elevation: 8,
+              color: Colors.yellow,
+              child: Text("Tinggi bayangan shadow",style: TextStyle(fontSize: 12.0)),
+          ),
           ]),
         ),
       ),
