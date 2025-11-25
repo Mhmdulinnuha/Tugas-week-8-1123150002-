@@ -59,6 +59,47 @@ class MyPages extends StatelessWidget {
               ),
               ),
             ),
+
+            const SizedBox(height: 20),
+
+            Card(
+                  elevation: 8,
+                  shadowColor: Colors.red,
+                  clipBehavior: Clip.antiAlias,
+                  child: Container(
+                    width: double.infinity,
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topRight,
+                        end: Alignment.bottomLeft,
+                        colors: [Colors.blue, Colors.red],
+                      ),
+                    ),
+                    padding: const EdgeInsets.all(20),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.white, width: 4),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black26,
+                                blurRadius: 10,
+                                offset: Offset(0, 5),
+                              )
+                            ],
+                          ),
+                          child: const CircleAvatar(
+                            radius: 55,
+                            backgroundImage: AssetImage("assets/images/image.png"),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
           ]),
         ),
       ),
