@@ -221,6 +221,33 @@ class MyPages extends StatelessWidget {
               ],
             ),
           ),
+          
+         Container(
+  padding: EdgeInsets.all(20),
+  decoration: BoxDecoration(
+    borderRadius: BorderRadius.circular(25),
+    gradient: LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [
+        Color(0xFF0F3D73),
+        Color(0xFF0A2B52),
+      ],
+    ),
+    boxShadow: [
+      BoxShadow(
+        color: Colors.black.withOpacity(0.15),
+        blurRadius: 20,
+        offset: Offset(0, 10),
+      ),
+    ],
+  ),
+  child: Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [],
+  ),
+)
+
           ]),
         ),
       ),
