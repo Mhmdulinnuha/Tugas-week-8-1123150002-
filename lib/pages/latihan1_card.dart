@@ -244,7 +244,23 @@ class MyPages extends StatelessWidget {
   ),
   child: Column(
     crossAxisAlignment: CrossAxisAlignment.start,
-    children: [],
+    children: [
+
+     
+
+      SizedBox(height: 30),
+
+      // ================== CARD NUMBER ==================
+      const Text(
+        "4562   1122   4595   7852",
+        style: TextStyle(
+          fontSize: 26,
+          letterSpacing: 3,
+          color: Colors.white,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    ],
   ),
 )
 
